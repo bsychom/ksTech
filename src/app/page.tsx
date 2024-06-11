@@ -1,10 +1,18 @@
 import Image from "next/image";
-
+import Header from "./comoponoents/header";
+import Hero from "./comoponoents/Hero";
 export default function Home() {
   return (
-    <div className="w-screen h-screen flex justify-center items-center relative bg-[url('/background.svg')] bg-no-repeat bg-cover bg-center">
-      {/* <Image src="background.svg" alt="45" className="w-full " height={0} width={0} /> */}
-   
+    <div className="w-screen h-screen bg-white relative">
+      <div className="absolute w-full">
+        <Image className="w-full" src='images/background/gradientMesh.svg' alt="mesh" width={100} height={100}/>
+      </div>
+      <div className="relative w-full h-full ">
+        <Header/>
+        <Hero/>
+        
+      </div>
+
 
     </div>
     
