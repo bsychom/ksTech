@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Header() {
   return (
     <div className="w-full relative">
-      <div className="absolute w-[30%] h-[130px]   custum-clip bg-[#20207B]"></div>
-      <div className="w-full  relative  h-[130px] flex items-center pb-6  container mx-auto">
-        <div className="bg-black absolute -bottom-7 text-white container mx-auto mt-2  flex ">
-          <div className="w-[40%] flex justify-between pl-4 py-4 font-semibold capitalize">
+      <div className="absolute w-[30%] 2xl:w-[38%] h-[130px] 2xl:h-[150px]   custum-clip bg-[#20207B]"></div>
+      <div className="w-full  relative  h-[130px] 2xl:h-[150px] flex items-center pb-6  container mx-auto">
+        <div className="bg-black absolute -bottom-7 2xl:-bottom-8 text-white container mx-auto mt-2  flex ">
+          <div className="w-[40%] flex justify-between pl-4 py-4 2xl:py-6 2xl:pl-6 font-semibold capitalize">
             <div>
               <p>Accueil</p>
             </div>
@@ -23,7 +23,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <div className="w-[20%] flex justify-center">
+        <div className="w-[20%] 2xl:w-[23%] flex justify-center">
           <Image
             className="w-[80%]"
             src="/images/icons/logo.svg"
@@ -32,7 +32,7 @@ export default function Header() {
             height={100}
           />
         </div>
-        <div className=" flex-1 flex justify-end gap-10 ">
+        <div className=" flex-1 flex justify-end gap-10 2xl:gap-16  ">
           <div className="flex  gap-4">
             <div>
               <Image
@@ -53,7 +53,7 @@ export default function Header() {
               </div>
             </div>
           </div>
-          <div className="flex  gap-4">
+          <div className="flex  gap-4 ">
             <div>
               <Image
                 className="w-10 pt-1"
