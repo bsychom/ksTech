@@ -8,7 +8,7 @@ export default function Advantages() {
         <div className="w-full flex justify-center pb-8 ">
           <div className="w-fit relative">
             <div className="absolute w-1/2 bottom-0  h-[3px] bg-[#20207B] "></div>
-            <p className=" text-2xl font-extrabold tracking-wide   pb-4  font-['Poppins']">
+            <p className="  font-extrabold tracking-wide  text-2xl  2xl:text-3xl pb-4  font-['Poppins']">
               Avantages du câblage structuré
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function Advantages() {
         <div className="w-full flex gap-2 pt-14 ">
           <div className="w-1/2 flex gap-2">
             <div className="w-1/2 ">
-              <div className="  bg-[url('/images/background/first.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
+              <div className="  bg-[url('/images/background/first.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex gap-1 flex-col items-center">
                   <div className="">
@@ -56,7 +56,7 @@ export default function Advantages() {
               </div>
             </div>
             <div className="w-1/2 bg-white">
-              <div className="  bg-[url('/images/background/second.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative min-h-[356.5px] max-h-[356.5px]  hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
+              <div className="  bg-[url('/images/background/second.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative min-h-[356.5px] max-h-[356.5px]  hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex gap-1 flex-col items-center">
                   <div className="">
@@ -91,7 +91,7 @@ export default function Advantages() {
           </div>
           <div className="w-1/2 flex gap-2">
             <div className="w-1/2 ">
-              <div className=" max-h-[356.5px]  bg-[url('/images/background/third.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
+              <div className=" max-h-[356.5px]  bg-[url('/images/background/third.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex gap-1 flex-col items-center">
                   <div className="">
@@ -125,7 +125,7 @@ export default function Advantages() {
               </div>
             </div>
             <div className="w-1/2 ">
-              <div className="  bg-[url('/images/background/for.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative max-h-[356.5px] min-h-[356.5px] hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
+              <div className="  bg-[url('/images/background/for.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative max-h-[356.5px] min-h-[356.5px] hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex  flex-col items-center">
                   <div className="">

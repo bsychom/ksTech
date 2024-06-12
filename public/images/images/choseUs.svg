@@ -1,6 +1,6 @@
 <svg width="638" height="629" viewBox="0 0 638 629" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="499" height="560" rx="10" fill="url(#pattern0_208_496)"/>
-<rect x="154" y="105" width="484" height="490" rx="10" fill="url(#pattern1_208_496)"/>
+<rect x="0.5" y="0.5" width="498" height="559" rx="9.5" fill="url(#pattern0_208_496)" stroke="#20207B"/>
+<rect x="154.5" y="105.5" width="483" height="489" rx="9.5" fill="url(#pattern1_208_496)" stroke="#20207B"/>
 <rect x="79" y="73" width="469" height="551" rx="5" stroke="#20207B" stroke-width="10"/>
 <defs>
 <pattern id="pattern0_208_496" patternContentUnits="objectBoundingBox" width="1" height="1">

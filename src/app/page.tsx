@@ -5,6 +5,8 @@ import Hero from "./comoponoents/Hero";
 import Advantages from "./comoponoents/Advantages";
 import About from "./comoponoents/About";
 import Services from "./comoponoents/Services";
+import ChoseUs from "./comoponoents/ChoseUs";
+import ContactUs from "./comoponoents/ContactUs";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -25,6 +27,9 @@ export default function Home() {
         <Advantages />
         <About />
         <Services/>
+        <ChoseUs/>
+        <ContactUs/>
+
         
       </div>
     </div>

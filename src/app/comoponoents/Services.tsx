@@ -61,10 +61,10 @@ export default function Services() {
     <div className="w-full bg-white/30 2xl:bg-white/40 relative py-10 ">
       <div className=" w-full flex justify-center ">
         <div className="w-fit  relative">
-          <div className="absolute w-[55%] right-0 bg-[#20207B] bottom-0 h-[3px] rounded-full"></div>
+          <div className="absolute w-[50%] right-0 bg-[#20207B] bottom-0 h-[3px] rounded-full"></div>
           <div>
-            <h1 className="font-['Poppins'] pb-4 text-3xl font-semibold capitalize tracking-wide">
-              Présentation de notre entreprise
+            <h1 className="font-['Poppins'] pb-4 text-2xl  2xl:text-3xl font-semibold capitalize tracking-wide">
+            Présentation de nos Services
             </h1>
           </div>
         </div>
@@ -102,14 +102,14 @@ export default function Services() {
                   </div>
                   <div className="pt-6 flex flex-col gap-3">
                     <div>
-                      <p className="font-['Poppins']">{service.desc1}</p>
+                      <p className="font-['Poppins'] text-sm 2xl:text-base">{service.desc1}</p>
                     </div>
                     {index === services.length - 1 && (
                       <div className="w-[90%] mx-auto">
                         <ul className="list-disc space-y-1">
                           <li className=" font-['Poppins']">
-                            <p>
-                              <span className="text-lg font-semibold">
+                            <p className="text-sm 2xl:text-base">
+                              <span className="2xl:text-lg font-semibold">
                                 Téléphonie analogique traditionnelle
                               </span>{" "}
                               : Installation et maintenance de systèmes de
@@ -118,8 +118,8 @@ export default function Services() {
                             </p>
                           </li>
                           <li className=" font-['Poppins']">
-                            <p>
-                              <span className="text-lg font-semibold">
+                            <p className="text-sm 2xl:text-base">
+                              <span className="2xl:text-lg font-semibold">
                                 Téléphonie IP avec serveur chez le client
                               </span>{" "}
                               : Solutions de téléphonie IP hébergées sur des
@@ -128,8 +128,8 @@ export default function Services() {
                             </p>
                           </li>
                           <li className=" font-['Poppins']">
-                            <p>
-                              <span className="text-lg font-semibold">
+                            <p className="text-sm 2xl:text-base">
+                              <span className="2xl:text-lg font-semibold">
                                 Téléphonie hébergée (cloud)
                               </span>{" "}
                               : Profitez des avantages de la téléphonie IP sans
@@ -142,20 +142,20 @@ export default function Services() {
                       </div>
                     )}
                     <div className=" pb-6 border-b-2 border-[#20207B]">
-                      <p className="font-['Poppins']">{service.desc2}</p>
+                      <p className="font-['Poppins'] text-sm 2xl:text-base ">{service.desc2}</p>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="w-[40%]  bg-white relative">
-                  <div className={`absolute w-80 h-80    bg-[#20207B]/60 blur-3xl ${index % 2 == 0 ? '-right-20  -bottom-[150px]' : '-left-20 2xl:-left-32 -bottom-[90px]'} overflow-hidden`}></div>
+                  <div className={`absolute w-72 h-72 2xl:w-80 2xl:h-80    bg-[#20207B]/60 blur-3xl ${index % 2 == 0 ? '-right-20  -bottom-[150px]' : '-left-20 2xl:-left-32 -bottom-[90px]'} overflow-hidden`}></div>
                 <div className="relative ">
                   <Image
                     src={service.img}
                     alt="image"
                     width={0}
                     height={0}
-                    className="w-full 2xl:w-[80%] "
+                    className="w-[80%] "
                   />
                 </div>
               </div>
