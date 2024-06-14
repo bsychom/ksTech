@@ -7,6 +7,7 @@ import About from "./comoponoents/About";
 import Services from "./comoponoents/Services";
 import ChoseUs from "./comoponoents/ChoseUs";
 import ContactUs from "./comoponoents/ContactUs";
+import Footer from "./comoponoents/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -29,8 +30,7 @@ export default function Home() {
         <Services/>
         <ChoseUs/>
         <ContactUs/>
-
-        
+        <Footer/>
       </div>
     </div>
   );

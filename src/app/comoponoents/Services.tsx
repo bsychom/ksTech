@@ -105,7 +105,7 @@ export default function Services() {
                       <p className="font-['Poppins'] text-sm 2xl:text-base">{service.desc1}</p>
                     </div>
                     {index === services.length - 1 && (
-                      <div className="w-[90%] mx-auto">
+                      <div className="w-[92%] mx-auto">
                         <ul className="list-disc space-y-1">
                           <li className=" font-['Poppins']">
                             <p className="text-sm 2xl:text-base">
@@ -149,7 +149,7 @@ export default function Services() {
               </div>
               <div className="w-[40%]  bg-white relative">
                   <div className={`absolute w-72 h-72 2xl:w-80 2xl:h-80    bg-[#20207B]/60 blur-3xl ${index % 2 == 0 ? '-right-20  -bottom-[150px]' : '-left-20 2xl:-left-32 -bottom-[90px]'} overflow-hidden`}></div>
-                <div className="relative ">
+                <div className={`relative flex ${index % 2 !== 0 ? 'justify-start' : 'justify-end'}`}>
                   <Image
                     src={service.img}
                     alt="image"
