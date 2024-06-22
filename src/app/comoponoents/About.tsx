@@ -4,13 +4,13 @@ export default function About(){
         <div className="w-full   relative">
             <div className="absolute -left-8 2xl:-left-14 bottom-0  w-[200px] h-[200px] 2xl:w-[250px] 2xl:h-[250px]  bg-[#001F3F]/80 blur-3xl">
           </div>
-            <div className="bg-white/30 2xl:bg-white/40 py-28 relative">
-            <div className="flex container mx-auto ">
-            <div className="w-1/2 ">
-                <Image className="w-[90%] 2xl:w-full" src="/images/images/about.svg" alt="about" width={100} height={100}/>
+            <div className=" py-14 lg:py-28 relative">
+            <div className="flex  flex-col-reverse items-center justify-center lg:flex-row container mx-auto gap-10 lg:gap-0">
+            <div className="w-[85%] mx-auto lg:w-1/2 ">
+                <Image className="w-[90%] mx-auto lg:mx-0 2xl:w-full" src="/images/images/about.svg" alt="about" width={100} height={100}/>
             </div>
-            <div className="w-1/2   flex justify-end">
-                <div className="w-[80%]  h-full flex flex-col justify-center ">
+            <div className="w-[95%]   lg:w-1/2   flex lg:justify-end">
+                <div className="w-[80%] mx-auto lg:mx-0  h-full flex flex-col justify-center ">
                     <div className="w-full flex items-center gap-4">
                         <div>
                             <Image className="w-8 2xl:w-10" src='/images/icons/icon.svg' alt="icon" height={10} width={10}/>

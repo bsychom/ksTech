@@ -3,26 +3,26 @@ import Image from "next/image";
 export default function Advantages() {
   return (
     <div className="pt-10 w-full relative ">
-      <div className="absolute -left-8 2xl:-left-14 top-0  w-[200px] h-[200px] 2xl:w-[250px] 2xl:h-[250px]  bg-[#001F3F]/80 blur-3xl"></div>
-      <div className="w-full container mx-auto">
+      <div className="absolute -left-8 2xl:-left-14 top-0 w-[100px] h-[100px] md:w-[120px] md:h-[120px]   lg:w-[200px] lg:h-[200px] 2xl:w-[250px] 2xl:h-[250px]  bg-[#001F3F]/80 blur-3xl"></div>
+      <div className="w-full  container mx-auto">
         <div className="w-full flex justify-center pb-8 ">
           <div className="w-fit relative">
             <div className="absolute w-1/2 bottom-0  h-[3px] bg-[#20207B] "></div>
-            <p className="  font-extrabold tracking-wide  text-2xl  2xl:text-3xl pb-4  font-['Poppins']">
+            <p className="  font-extrabold tracking-wide text-lg md:text-xl    lg:text-2xl  2xl:text-3xl pb-4  font-['Poppins']">
               Avantages du câblage structuré
             </p>
           </div>
         </div>
-        <p className=" w-[85%] mx-auto  font-medium tracking-wide leading-relaxed inter.className font-['Poppins']">
+        <p className="w-[95%] md:w-[90%]  text-xs md:text-sm  lg:w-[85%] mx-auto  font-medium tracking-wide leading-relaxed inter.className font-['Poppins']">
           Bien que les câbles et les fils soient souvent cachés derrière les
           murs, les solutions de câblage structuré peuvent offrir aux
           entreprises et aux centres de données des avantages
           indispensables. Sans cela, le système est en danger, notamment lors de
           la maintenance. Certains avantages du câblage structuré incluent :
         </p>
-        <div className="w-full flex gap-2 pt-14 ">
-          <div className="w-1/2 flex gap-2">
-            <div className="w-1/2 ">
+        <div className="w-full  flex flex-col lg:flex-row  gap-2 pt-14 px-4 lg:px-0 ">
+          <div className="w-full lg:w-1/2 flex flex-col md:flex-row   gap-2">
+            <div className="w-full md:w-1/2  ">
               <div className="  bg-[url('/images/background/first.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex gap-1 flex-col items-center">
@@ -55,8 +55,8 @@ export default function Advantages() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 bg-white">
-              <div className="  bg-[url('/images/background/second.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative min-h-[356.5px] max-h-[356.5px]  hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
+            <div className="w-full md:w-1/2 ">
+              <div className="  bg-[url('/images/background/second.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative md:min-h-[335px] lg:min-h-[356.5px] lg:max-h-[356.5px]  hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex gap-1 flex-col items-center">
                   <div className="">
@@ -89,9 +89,9 @@ export default function Advantages() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 flex gap-2">
-            <div className="w-1/2 ">
-              <div className=" max-h-[356.5px]  bg-[url('/images/background/third.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
+          <div className="w-full lg:w-1/2 flex flex-col md:flex-row gap-2 ">
+            <div className="w-full md:w-1/2 ">
+              <div className=" md:h-[356px] lg:max-h-[356.5px]  bg-[url('/images/background/third.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex gap-1 flex-col items-center">
                   <div className="">
@@ -124,8 +124,8 @@ export default function Advantages() {
                 </div>
               </div>
             </div>
-            <div className="w-1/2 ">
-              <div className="  bg-[url('/images/background/for.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative max-h-[356.5px] min-h-[356.5px] hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
+            <div className="w-full md:w-1/2 ">
+              <div className="  bg-[url('/images/background/for.svg')] bg-cover rounded-lg bg-no-repeat bg-center relative lg:max-h-[356.5px] min-h-[356.5px] hover:scale-110 2xl:hover:scale-125 hover:z-50 hover:cursor-pointer transition-all duration-500 ease-in">
                 <div className="absolute w-full h-full  bg-black/70 rounded-lg"></div>
                 <div className="relative text-white w-full mx-auto py-10 flex  flex-col items-center">
                   <div className="">

@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Header() {
   return (
     <div className="w-full relative">
-      <div className="absolute w-[30%] 2xl:w-[38%] h-[130px] 2xl:h-[150px]   custum-clip bg-[#20207B]"></div>
-      <div className="w-full  relative  h-[130px] 2xl:h-[150px] flex items-center pb-6  container mx-auto">
+      <div className="absolute  md:w-[25%] lg:w-[30%] 2xl:w-[38%] h-[130px] 2xl:h-[150px]   custum-clip bg-[#20207B]"></div>
+      <div className="w-full   relative  h-[130px] 2xl:h-[150px] flex items-center pb-6  container mx-auto">
         <div className="bg-black absolute -bottom-7 2xl:-bottom-8 text-white container mx-auto mt-2  flex ">
           <div className="w-[40%] flex justify-between pl-4 py-4 2xl:py-6 2xl:pl-6 font-semibold capitalize">
             <div>

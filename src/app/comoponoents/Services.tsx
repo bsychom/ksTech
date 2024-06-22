@@ -58,32 +58,32 @@ const services: ServicesInterface[] = [
 
 export default function Services() {
   return (
-    <div className="w-full bg-white/30 2xl:bg-white/40 relative py-10 ">
+    <div className="w-full  relative lg:py-10 ">
       <div className=" w-full flex justify-center ">
         <div className="w-fit  relative">
           <div className="absolute w-[50%] right-0 bg-[#20207B] bottom-0 h-[3px] rounded-full"></div>
           <div>
-            <h1 className="font-['Poppins'] pb-4 text-2xl  2xl:text-3xl font-semibold capitalize tracking-wide">
-            Présentation de nos Services
+            <h1 className="font-['Poppins'] pb-4 text-lg md:text-xl lg:text-2xl  2xl:text-3xl font-semibold capitalize tracking-wide">
+              Présentation de nos Services
             </h1>
           </div>
         </div>
       </div>
-      <div className="mt-24 container mx-auto ">
+      <div className=" mt-14 lg:mt-24 container mx-auto ">
         {services.map((service, index) => {
           return (
             <div
               key={index}
-              className={`w-full flex gap-4  ${
-                index % 2 !== 0 ? "flex-row-reverse" : "flex-row"
+              className={`w-full flex flex-col lg:gap-4 gap-8 ${
+                index % 2 !== 0 ? "lg:flex-row-reverse" : "lg:flex-row"
               } ${index === 0 ? "" : "pt-32"}`}
             >
               <div
-                className={`w-[60%]   flex  ${
+                className={`w-full lg:w-[60%]   flex  ${
                   index % 2 !== 0 ? "justify-end" : "justify-start"
                 }`}
               >
-                <div className="w-[80%]  h-full flex flex-col justify-center ">
+                <div className="w-[95%] mx-auto lg:mx-0 lg:w-[80%]   h-full flex flex-col justify-center ">
                   <div className="w-full flex items-center gap-4">
                     <div>
                       <Image
@@ -102,7 +102,9 @@ export default function Services() {
                   </div>
                   <div className="pt-6 flex flex-col gap-3">
                     <div>
-                      <p className="font-['Poppins'] text-sm 2xl:text-base">{service.desc1}</p>
+                      <p className="font-['Poppins'] text-sm 2xl:text-base">
+                        {service.desc1}
+                      </p>
                     </div>
                     {index === services.length - 1 && (
                       <div className="w-[92%] mx-auto">
@@ -141,15 +143,27 @@ export default function Services() {
                         </ul>
                       </div>
                     )}
-                    <div className=" pb-6 border-b-2 border-[#20207B]">
-                      <p className="font-['Poppins'] text-sm 2xl:text-base ">{service.desc2}</p>
+                    <div className=" pb-6 lg:border-b-2 border-[#20207B]">
+                      <p className="font-['Poppins'] text-sm 2xl:text-base ">
+                        {service.desc2}
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div className="w-[40%]  bg-white relative">
-                  <div className={`absolute w-72 h-72 2xl:w-80 2xl:h-80    bg-[#20207B]/60 blur-3xl ${index % 2 == 0 ? '-right-20  -bottom-[150px]' : '-left-20 2xl:-left-32 -bottom-[90px]'} overflow-hidden`}></div>
-                <div className={`relative flex ${index % 2 !== 0 ? 'justify-start' : 'justify-end'}`}>
+              <div className=" w-full  lg:w-[40%]  bg-whit  relative">
+                <div
+                  className={`absolute w-40 h-40 lg:w-72 lg:h-72 2xl:w-80 2xl:h-80    bg-[#20207B]/60 blur-3xl ${
+                    index % 2 == 0
+                      ? "-right-20  -bottom-[150px]"
+                      : "-left-20 2xl:-left-32 -bottom-[90px]"
+                  } overflow-hidden`}
+                ></div>
+                <div
+                  className={`relative flex justify-center ${
+                    index % 2 !== 0 ? "lg:justify-start" : "lg:justify-end"
+                  }`}
+                >
                   <Image
                     src={service.img}
                     alt="image"
@@ -158,6 +172,7 @@ export default function Services() {
                     className="w-[80%] "
                   />
                 </div>
+                <div className="w-[95%] mx-auto h-[1px] mt-6 bg-[#20207B] lg:hidden"></div>
               </div>
             </div>
           );
