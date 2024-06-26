@@ -6,6 +6,7 @@ import TeleEntr from "../../../public/images/images/teleEntr.svg";
 import Image from "next/image";
 import Icon from "../../../public/images/icons/IconServices.svg";
 
+
 interface ServicesInterface {
   title: string;
   desc1: string;
