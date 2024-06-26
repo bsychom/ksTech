@@ -46,8 +46,8 @@ export default function Advantages() {
                       style={{ lineHeight: "20px" }}
                     >
                       Les normes de câblage structuré aident les organisations à
-                      installer le câblage de manière à maintenir l'ensemble de
-                      l'infrastructure de câblage organisée, évitant ainsi les
+                      installer le câblage de manière à maintenir l&apos;ensemble de
+                      l&apos;infrastructure de câblage organisée, évitant ainsi les
                       enchevêtrements chaotiques. Cela réduit les temps d’arrêt
                       et laisse moins de place aux erreurs
                     </p>
@@ -79,10 +79,10 @@ export default function Advantages() {
                       style={{ lineHeight: "20px" }}
                     >
                       Si vous rencontrez des problèmes avec votre réseau, vous
-                      pouvez facilement vérifier s'il y a un problème avec vos
+                      pouvez facilement vérifier s&apos;il y a un problème avec vos
                       connexions par câble. En cas de problème avec un câble, un
                       câblage structuré peut vous aider à remplacer rapidement
-                      le câble à l'origine du problème.
+                      le câble à l&apos;origine du problème.
                     </p>
                   </div>
                 </div>
@@ -114,11 +114,11 @@ export default function Advantages() {
                       style={{ lineHeight: "20px" }}
                     >
                       Avec les progrès constants de la technologie des
-                      communications, il est essentiel d'avoir un système qui
-                      peut s'adapter à l'avenir. Les solutions de câblage
+                      communications, il est essentiel d&apos;avoir un système qui
+                      peut s&apos;adapter à l&apos;avenir. Les solutions de câblage
                       structuré permettent précisément cela, rendant
-                      l'implémentation d'améliorations facile et sans risque
-                      pour l'infrastructure.
+                      l&apos;implémentation d&apos;améliorations facile et sans risque
+                      pour l&apos;infrastructure.
                     </p>
                   </div>
                 </div>
@@ -139,7 +139,7 @@ export default function Advantages() {
                   </div>
                   <div>
                     <h5 className="text-center w-[90%] mx-auto uppercase font-semibold font-['Poppins']">
-                      Réduit l'installation globale
+                      Réduit l&apos;installation globale
                     </h5>
                   </div>
                   <div>
@@ -148,11 +148,11 @@ export default function Advantages() {
                       style={{ lineHeight: "19.5px" }}
                     >
                       Les déplacements, ajouts et modifications de
-                      l'infrastructure peuvent être réalisés rapidement sans que
+                      l&apos;infrastructure peuvent être réalisés rapidement sans que
                       des câbles désorganisés ne se mettent en difficulté. Cela
-                      réduit les chances d'erreurs humaines lors des réparations
+                      réduit les chances d&apos;erreurs humaines lors des réparations
                       et des modifications, ce qui permet une meilleure
-                      utilisation des fonds et du temps de l'entreprise.
+                      utilisation des fonds et du temps de l&apos;entreprise.
                     </p>
                   </div>
                 </div>

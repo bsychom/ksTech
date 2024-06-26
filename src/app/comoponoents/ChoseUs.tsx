@@ -27,7 +27,7 @@ export default function ChoseUs() {
                     <div className="pt-5 flex flex-col gap-3">
                         <div className=" pb-6 border-b-2 border-[#20207B]">
                             <p className="font-['Poppins'] text-sm 2xl:text-base">
-                            Avec des années d'expérience et une équipe d'experts, nous garantissons des solutions de haute qualité adaptées aux besoins de nos clients. Nous nous engageons à fournir des services et des solutions qui répondent aux standards les plus élevés de l'industrie. En restant à la pointe des avancées technologiques, nous offrons des solutions modernes et évolutives. La satisfaction de nos clients est notre priorité. Nous offrons un support personnalisé et réactif pour répondre à tous vos besoins.                            </p>
+                            Avec des années d&apos;expérience et une équipe d&apos;experts, nous garantissons des solutions de haute qualité adaptées aux besoins de nos clients. Nous nous engageons à fournir des services et des solutions qui répondent aux standards les plus élevés de l&apos;industrie. En restant à la pointe des avancées technologiques, nous offrons des solutions modernes et évolutives. La satisfaction de nos clients est notre priorité. Nous offrons un support personnalisé et réactif pour répondre à tous vos besoins.                            </p>
                         </div>
                     </div>
                 </div>
