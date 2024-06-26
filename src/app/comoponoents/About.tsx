@@ -28,7 +28,7 @@ export default function About(){
                             </p></div>
                         <div className=" pb-6 border-b-2 border-[#20207B]">
                             <p className="font-['Poppins'] text-sm 2xl:text-base">
-                            Notre mission est de fournir des infrastructures de réseau robustes et efficaces, permettant à nos clients de rester connectés et de prospérer dans un monde de plus en plus numérique. Nous mettons un point d'honneur à offrir des services de qualité supérieure tout en restant à l'avant-garde des avancées technologiques.
+                            Notre mission est de fournir des infrastructures de réseau robustes et efficaces, permettant à nos clients de rester connectés et de prospérer dans un monde de plus en plus numérique. Nous mettons un point d&apos;honneur à offrir des services de qualité supérieure tout en restant à l&apos;avant-garde des avancées technologiques.
                             </p>
                         </div>
                     </div>
