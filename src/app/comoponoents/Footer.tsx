@@ -59,6 +59,7 @@ export default function Footer() {
               </div>
             </div>
           );
+          
         })}
       </div>
       <div className="w-full bg-[#020416] text-white pt-10 relative">
