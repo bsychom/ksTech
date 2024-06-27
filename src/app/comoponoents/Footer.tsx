@@ -34,13 +34,13 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <div className="w-full relative">
-      <div className="w-full bg-[#20207B] text-white flex pb-10 pt-14">
+      <div className="w-full bg-[#20207B] text-white grid md:grid-cols-2 lg:grid-cols-4 gap-14  pb-10 pt-9 lg:pt-14">
         {Data.map((data, index) => {
           return (
-            <div key={index} className=" space-y-4 w-[25%] ">
-              <div className=" w-full flex justify-center gap-4">
+            <div key={index} className=" space-y-2 w-full    ">
+              <div className={`w-full flex justify-center gap-4 ${index == 1 ? 'md:pt-3 lg:pt-0' : 'md:pt-0'} ${index == 0 ? 'lg:-mt-2' : 'mt-0'} `}>
                 <Image
-                  className={` w-14`}
+                  className={` ${index == 0 ? 'w-11 lg:w-[60px]' : 'w-10 lg:w-14'}`}
                   src={data.img}
                   alt="support"
                   width={10}
@@ -48,12 +48,12 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <h1 className="text-center font-bold font-['Poppins']">
+                <h1 className="text-center text-sm lg:text-base font-bold font-['Poppins']">
                   {data.title}
                 </h1>
               </div>
               <div className="w-full">
-                <p className="w-[85%] mx-auto text-center font-['Roboto'] text-sm">
+                <p className="w-[80%] md:w-[70%] lg:w-[85%] mx-auto text-center  font-['Roboto'] text-xs  lg:text-sm">
                   {data.desc}
                 </p>
               </div>
@@ -64,16 +64,16 @@ export default function Footer() {
       <div className="w-full bg-[#020416] text-white pt-10 relative">
         <div className="absolute w-60 h-60 bg-[#0895FB]/40 -top-10 -right-10 blur-3xl"></div>
         <div className="w-full flex items-center flex-col">
-          <div>
-            <h1 className="text-4xl font-['Poppins'] w-[60%] mx-auto font-extrabold leading-relaxed">
+          <div className=" ">
+            <h1 className="text-lg md:text-2xl lg:text-4xl font-['Poppins'] w-[80%] md:w-[75%]  text-center lg:text-start lg:w-[60%] mx-auto font-extrabold leading-relaxed">
               Avez-vous un projet en tête? travaillons ensemble
             </h1>
           </div>
           <div className="pt-5">
-            <button className="border-2 rounded-full border-white px-6 py-2 flex items-center gap-3 text-xl font-bold">
+            <button className="border-2 rounded-full border-white px-3 md:px-4 lg:px-6 py-1.5 lg:py-2 flex items-center gap-3 text-base md:text-lg lg:text-xl font-bold">
               Contact
               <Image
-                className="w-7"
+                className="w-5 md:w-6 lg:w-7"
                 src="/images/icons/IconPhone.svg"
                 alt="phone"
                 width={10}
