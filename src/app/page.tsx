@@ -31,6 +31,10 @@ export default function Home() {
         <ChoseUs/>
         <ContactUs/>
         <Footer/>
+        <div className="container">
+
+        </div>
+        
       </div>
     </div>
   );
