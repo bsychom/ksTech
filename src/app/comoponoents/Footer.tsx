@@ -85,38 +85,6 @@ export default function Footer() {
         </div>
         <div className=" w-full relative">
           <div className="absolute w-56 h-52 -top-[60%] bg-white/40 blur-3xl"></div>
-          {/* <div className="w-full bg-[#949494]/20 mt-20 container  rounded-md flex relative">
-            <div className="w-[40%] flex items-center ">
-              <h4 className="w-[80%] mx-auto text-xl font-['Poppins'] ">
-                Inscrivez-vous à notre newsletter
-              </h4>
-            </div>
-            <div className="w-[60%] my-4 flex justify-center ">
-              <div className="w-[90%] h-full relative">
-                <input
-                  className="w-full h-full    px-4 py-[18px]  bg-[#020416] rounded-md outline-none border-[1px] border-[#949494]/50 placeholder:text-[#98A2B3] text-[#98A2B3] "
-                  type="text"
-                  placeholder="E-mail"
-                />
-                <div
-                  className="absolute       top-0 h-full  rounded-md w-full flex justify-end items-center pr-1.5  "
-                  onClick={() => {
-                    console.log("click");
-                  }}
-                >
-                  <button
-                    className="py-0 bg-[#20207B]   font-semibold font-[Poppins] px-8 rounded-md h-[80%]"
-                    onClick={() => {
-                      console.log("click abouve button");
-                    }}
-                  >
-                    S&apos;abonner
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div></div>
-          </div> */}
           <div className="container  mt-20 w-[90%] md:w-full xl:w-[80%] 3xl:w-[60%] rounded-md">
             <div className="bg-[#949494]/20 py-2 rounded-md ">
 
