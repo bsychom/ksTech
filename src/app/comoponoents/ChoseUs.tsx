@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function ChoseUs() {
   return (
     <div className="mt-14 lg:mt-28 w-full">
-      <div className="w-full container mx-auto">
+      <div className="w-full container ">
         <div className="w-full flex justify-center  ">
           <div className="w-fit relative">
             <div className="absolute w-1/2 bottom-0  h-[3px] bg-[#20207B] "></div>
@@ -14,7 +14,7 @@ export default function ChoseUs() {
         </div>
         <div className="w-full   ">
             <div className="pt-1 md:pt-3 lg:pt-20 pb-12 relative">
-            <div className="flex container mx-auto flex-col-reverse lg:flex-row ">
+            <div className="flex container  flex-col-reverse lg:flex-row ">
             <div className="w-full lg:w-1/2 relative">
             <div className={`absolute w-72 h-72 2xl:w-80 2xl:h-80    bg-[#20207B]/60 blur-3xl -left-20 2xl:-left-32 -bottom-[90px] `}></div>
 

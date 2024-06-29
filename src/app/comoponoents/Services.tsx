@@ -5,14 +5,7 @@ import TeleIp from "../../../public/images/images/teleIp.svg";
 import TeleEntr from "../../../public/images/images/teleEntr.svg";
 import Image from "next/image";
 import Icon from "../../../public/images/icons/IconServices.svg";
-
-
-interface ServicesInterface {
-  title: string;
-  desc1: string;
-  desc2: string;
-  img: any;
-}
+import { ServicesInterface } from "../interfaces/interfaces";
 
 const services: ServicesInterface[] = [
   {
@@ -70,7 +63,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className=" mt-14 lg:mt-24 container mx-auto ">
+      <div className=" mt-14 lg:mt-24 container  ">
         {services.map((service, index) => {
           return (
             <div
@@ -170,7 +163,7 @@ export default function Services() {
                     alt="image"
                     width={0}
                     height={0}
-                    className="w-[80%] "
+                    className="w-[80%] md:w-[57%] lg:w-[80%] "
                   />
                 </div>
                 <div className="w-[95%] mx-auto h-[1px] mt-6 bg-[#20207B] lg:hidden"></div>

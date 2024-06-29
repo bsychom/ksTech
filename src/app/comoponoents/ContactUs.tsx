@@ -7,7 +7,7 @@ export default function ContactUs() {
     <div className="w-full relative bg-[#001F3F] py-14">
       <div className="absolute -top-14 -right-14 w-60 h-60 bg-white/70 blur-3xl"></div>
       <div className="absolute -bottom-14 -left-14 w-60 h-60 bg-white/70 blur-3xl"></div>
-      <div className="container mx-auto">
+      <div className="container ">
         <div className=" w-full flex justify-center ">
           <div className="w-fit  relative">
             <div className="absolute w-[50%] right-0 bg-[#0895FB] bottom-0 h-[3px] rounded-full"></div>
