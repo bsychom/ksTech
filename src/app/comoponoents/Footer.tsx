@@ -127,7 +127,7 @@ export default function Footer() {
             <div className="w-full md:w-[60%] flex justify-end bg-[#020416] border-[0.5px] border-[#949494]/50 rounded-md">
               <div className="flex-1">
               <input
-                  className="w-full h-full    px-4 bg-inherit   rounded-md outline-none  placeholder:text-[#98A2B3] text-[#98A2B3] "
+                  className="w-full h-full text-xs md:text-sm lg:text-base px-4 bg-inherit   rounded-md outline-none  placeholder:text-[#98A2B3] text-[#98A2B3] "
                   type="text"
                   placeholder="E-mail"
                 />
