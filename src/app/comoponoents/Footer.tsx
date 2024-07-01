@@ -71,16 +71,12 @@ export default function Footer() {
             </h1>
           </div>
           <div className="pt-5">
-            <button className="border-2 rounded-full border-white px-3 md:px-4 lg:px-6 py-1.5 lg:py-2 flex items-center gap-3 text-base md:text-lg lg:text-xl font-bold">
+            <Link href="#contact" className="border-2  group hover:bg-white transition-all hover:text-black hover:border-[#0895FB] duration-500 ease-in rounded-full border-white px-3 md:px-4 lg:px-6 py-1.5 lg:py-2 flex items-center gap-3 text-base md:text-lg lg:text-xl font-bold">
               Contact
-              <Image
-                className="w-5 md:w-6 lg:w-7"
-                src="/images/icons/IconPhone.svg"
-                alt="phone"
-                width={10}
-                height={10}
-              />
-            </button>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" className="w-5 md:w-6 group-hover:text-black transition-all duration-500 ease-in" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.5 4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H6.89937C7.25806 2.5 7.57651 2.72953 7.68994 3.06981L8.93811 6.81434C9.06926 7.20777 8.89115 7.63776 8.52022 7.82322L6.63917 8.76375C7.55771 10.801 9.19898 12.4423 11.2363 13.3608L12.1768 11.4798C12.3622 11.1088 12.7922 10.9307 13.1857 11.0619L16.9302 12.3101C17.2705 12.4235 17.5 12.7419 17.5 13.1006V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H15C8.09644 17.5 2.5 11.9036 2.5 5V4.16667Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </Link>
           </div>
         </div>
         <div className=" w-full relative">
@@ -155,13 +151,13 @@ export default function Footer() {
                 Navigation
               </h3>
               <div className="flex flex-col gap-10">
-                <Link className=" " href="/">
+                <Link className="hover:text-[#0895FB] transition-all duration-500 ease-in-out " href="#home">
                   Accueil
                 </Link>
-                <Link className="" href="/">
+                <Link className="hover:text-[#0895FB] transition-all duration-500 ease-in-out" href="#about">
                   à propos de nous
                 </Link>
-                <Link className="" href="/">
+                <Link className="hover:text-[#0895FB] transition-all duration-500 ease-in-out" href="#services">
                   Nos services
                 </Link>
               </div>
@@ -173,7 +169,7 @@ export default function Footer() {
                 Contact
               </h3>
               <div className="flex flex-col gap-8 font-[Poppins]">
-                <Link className="flex items-center gap-3 " href="/">
+                <Link className="flex items-center gap-3 " href="tel:+1 (438) 464-2161">
                   <Image
                     className="w-7"
                     src="/images/icons/phoneWhite.svg"
@@ -181,9 +177,9 @@ export default function Footer() {
                     width={10}
                     height={10}
                   />
-                  <p className="text-sm">+1 (438) 464-2161</p>
+                  <p className="text-sm hover:text-[#0895FB] transition-all duration-500 ease-in-out">+1 (438) 464-2161</p>
                 </Link>
-                <Link className="flex gap-3 items-center" href="/">
+                <Link className="flex gap-3 items-center" href="mailto:info@kstechnologie.com">
                   <Image
                     className="w-7"
                     src="/images/icons/addressWhite.svg"
@@ -191,7 +187,7 @@ export default function Footer() {
                     width={10}
                     height={10}
                   />
-                  <p className="text-sm">info@kstechnologie.com</p>
+                  <p className="text-sm hover:text-[#0895FB] transition-all duration-500 ease-in-out">info@kstechnologie.com</p>
                 </Link>
                 <Link className="flex gap-3 items-center" href="/">
                   <Image
@@ -201,7 +197,7 @@ export default function Footer() {
                     width={10}
                     height={10}
                   />
-                  <p className="w-[60%] text-center text-sm">
+                  <p className="w-[60%] text-center text-sm hover:text-[#0895FB] transition-all duration-500 ease-in-out">
                     7190 Rue Jarry H1J 1G5 Anjou Québec
                   </p>
                 </Link>

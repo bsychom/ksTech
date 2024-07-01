@@ -70,16 +70,19 @@ export default function ContactUs() {
                   ></textarea>
                 </div>
                 <div className="w-full flex justify-center lg:justify-start">
-                  <button className="flex items-center gap-4 font-bold text-base  lg:text-lg tracking-wide bg-[#0895FB] rounded-lg p-2   md:p-3">
+                  <button className="flex hover:bg-white items-center gap-4 group transition-all duration-500 hover:text-black ease-in-out font-bold text-base  lg:text-lg tracking-wide bg-[#0895FB] rounded-lg p-2   md:p-3">
                     Soumettre
                     <span>
-                      <Image
+                      {/* <Image
                         className="w-4 md:pt-1 lg:pt-0 lg:w-6 "
                         src="/images/icons/RightWhite.svg"
                         alt="icon"
                         width={0}
                         height={0}
-                      />
+                      /> */}
+                      <svg className="w-4 md:pt-1 lg:pt-0 lg:w-6 group-hover:text-black duration-200  " viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 11.875L14 7.5M14 7.5L10 3.125M14 7.5L2 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
                     </span>
                   </button>
                 </div>
