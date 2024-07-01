@@ -106,7 +106,7 @@ export default function Header() {
       </div>
     </div>
     <div className="w-full relative">
-    <div className=" md:hidden   bg-black text-white flex items-center justify-between min-h-20 max-h-20 h-20 fixed w-full z-50">
+    <div className=" md:hidden   bg-black text-white flex items-center justify-between min-h-[70px] max-h-[70px] h-[70px] fixed w-full z-50">
       <div>
         <Link href="/">
           <Image className="w-52" src='/images/icons/logo.svg' width={10} height={10} alt="logo"/>
