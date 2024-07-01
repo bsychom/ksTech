@@ -124,7 +124,7 @@ export default function Header() {
       </div>
 
     </div>
-    <div className={`absolute w-full ${displayMenu ? 'h-screen' : 'h-[0px] ' }  bg-[#1E1E1E] transition-all duration-700 ease-in z-40 grid grid-rows-4 `}>
+    <div className={`absolute w-full ${displayMenu ? 'h-screen' : 'h-[0px] ' }  bg-[#1E1E1E] transition-all duration-700 ease-in z-40 grid grid-rows-5 `}>
       <div className="grid row-span-1"></div>
       <div className={`grid row-span-1 ${displayMenu ? '' : '-mt-12'} transition-all duration-700 ease-in`}>
         <div className={`flex flex-col w-[85%] mx-auto capitalize ${displayMenu ? 'gap-5' : 'gap-0'} transition-all duration-700 ease-in`}>
