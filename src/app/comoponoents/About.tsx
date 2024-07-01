@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function About(){
     return (
-        <div className="w-full   relative">
+        <section id="about" className="w-full   relative">
             <div className="absolute -left-8 2xl:-left-14 bottom-0  w-[200px] h-[200px] 2xl:w-[250px] 2xl:h-[250px]  bg-[#001F3F]/80 blur-3xl">
           </div>
             <div className=" py-14 lg:py-28 relative">
@@ -37,6 +37,6 @@ export default function About(){
             </div>
 
             </div>
-        </div>
+        </section>
     )
 }

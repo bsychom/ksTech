@@ -52,7 +52,7 @@ const services: ServicesInterface[] = [
 
 export default function Services() {
   return (
-    <div className="w-full  relative lg:py-10 ">
+    <section id="services" className="w-full  relative lg:py-10 ">
       <div className=" w-full flex justify-center ">
         <div className="w-fit  relative">
           <div className="absolute w-[50%] right-0 bg-[#20207B] bottom-0 h-[3px] rounded-full"></div>
@@ -172,6 +172,6 @@ export default function Services() {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 }

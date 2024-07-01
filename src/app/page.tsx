@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <div className="relative w-full h-full ">
         <Header />
-        <Hero />
+        <Hero  />
         <Advantages />
         <About />
         <Services/>

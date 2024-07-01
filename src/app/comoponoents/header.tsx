@@ -7,13 +7,13 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [displayMenu, setDisplayMenu] = useState<boolean>(false);
 
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-  }, [displayMenu]);
+  const handleClick = () =>{
+    setDisplayMenu(false);
+  }
 
   return (
-    <>
-      <div className="w-full relative hidden md:block">
+    <section id="home">
+      <div  className="w-full relative hidden md:block">
         <div className="absolute  md:w-[25%] lg:w-[30%] 2xl:w-[38%] h-[130px] 2xl:h-[150px]   custum-clip bg-[#20207B]"></div>
         <div className="w-full   relative  h-[130px] 2xl:h-[150px] flex items-center pb-6  container  ">
           <div className="w-[20%] 2xl:w-[23%] flex justify-center items-center">
@@ -89,14 +89,14 @@ export default function Header() {
         <div className=" container  relative">
           <div className="absolute bg-black w-full -top-[30px]  text-white flex items-center">
             <div className="w-[60%] flex justify-around font-semibold capitalize">
-              <Link href="/">Accueil</Link>
-              <Link href="/">à propos</Link>
-              <Link href="/">Services</Link>
+              <Link href="#home" >Accueil</Link>
+              <Link href="#about">à propos</Link>
+              <Link href="#services">Services</Link>
             </div>
-            <div className="w-[40%] flex justify-end">
-              <button className="p-4 bg-[#20207B]">
-                <p className="font-black tracking-wide">Contact </p>
-              </button>
+            <div className="w-[40%] flex justify-end relative">
+              <Link href="#contact" className="p-4 font-black tracking-wide bg-[#20207B]">
+                Contact
+              </Link>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Header() {
           </div>
           <div className="pr-3  ">
             <button
-              className={`bg-blue-950 ${
+              className={` ${
                 displayMenu ? "p-1" : "p-1.5"
               } rounded-sm`}
               onClick={() => setDisplayMenu(!displayMenu)}
@@ -155,13 +155,13 @@ export default function Header() {
           }`}
         >
           <div className={`flex flex-col w-[85%] mx-auto capitalize gap-5`}>
-            <Link className="text-[#0895FB]" href="/">
+            <Link className="text-[#0895FB]" href="#home" onClick={handleClick}>
               Accueil
             </Link>
-            <Link className="text-white" href="/">
+            <Link onClick={handleClick} className="text-white" href="#about">
               à propos
             </Link>
-            <Link className="text-white" href="/">
+            <Link onClick={handleClick} className="text-white" href="#services">
               Nos Services
             </Link>
           </div>
@@ -219,13 +219,16 @@ export default function Header() {
               </div>
             </div>
             <div className={`w-[80%] mx-auto pt-8  `}>
-              <button className="w-full text-white bg-[#20207B] py-5 rounded-md font-['Poppins'] font-bold tracking-wider">
+              <Link onClick={handleClick} href="#contact" className=" ">
+                <p className="w-full text-white bg-[#20207B] py-5 rounded-md font-['Poppins'] font-bold tracking-wider text-center">
+
                 Contact
-              </button>
+                </p>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }

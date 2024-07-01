@@ -4,7 +4,7 @@ import GoogleMap from "./GoogleMaps";
 
 export default function ContactUs() {
   return (
-    <div className="w-full relative bg-[#001F3F] py-14">
+    <section id="contact" className="w-full relative bg-[#001F3F] py-14">
       <div className="absolute -top-14 -right-14 w-60 h-60 bg-white/70 blur-3xl"></div>
       <div className="absolute -bottom-14 -left-14 w-60 h-60 bg-white/70 blur-3xl"></div>
       <div className="container ">
@@ -93,6 +93,6 @@ export default function ContactUs() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

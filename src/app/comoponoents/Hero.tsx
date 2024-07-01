@@ -8,10 +8,21 @@ export default function Hero(){
           <div className="w-full   lg:w-[70%]  bg-black/70 py-6  md:px-2 md:p-10 2xl:p-14  2xl:rounded-xl mx-2 md:mx-0 rounded-lg px-3">
             <h1  className=" text-white text-center lg:text-start text-base md:text-xl lg:text-2xl 2xl:text-3xl  font-bold font-['Roboto'] capitalize tracking-wide leading-relaxed 2xl:leading-relaxed">La Gestion De Votre Entreprise Vient De Devenir Plus Facile.</h1>
             <p className=" text-xs md:text-sm px-1.5 lg:px-0 lg:text-lg 2xl:text-xl font-semibold tracking-wide  py-5 text-white 2xl:w- 2xl:py-8 2xl:tracking-wider font-['Poppins']">Centralisez tout sur un environnement de câblage structuré et éliminez la complexité d&apos;avoir plusieurs infrastructures de câblage en place.</p>
-            <button className="bg-white flex items-center gap-3 px-3 py-2 rounded-lg " >
+            {/* <button className="bg-white  flex items-center gap-3 px-3 py-2 rounded-lg relative" >
+              <div className="asbsolute w-full h-full bg-[#hover:bg-[#20207B]"></div>
+              <p className=" leading-relaxed text-[#103535]  font-extrabold  font-['Roboto']">Contact</p> <span><Image className="w-4 " src="/images/icons/Right.svg" alt="right" width={10} height={10}/></span>
+
+            </button> */}
+            <div className="relative w-fit">
+              <div className="absolute w-full h-full bg-red-500"></div>
+              <div  className="flex gap-3 bg-white items-center rounded-lg">
+              <button className="  flex items-center gap-3 px-3 py-2 rounded-lg relative" >
               <p className=" leading-relaxed text-[#103535]  font-extrabold  font-['Roboto']">Contact</p> <span><Image className="w-4 " src="/images/icons/Right.svg" alt="right" width={10} height={10}/></span>
 
             </button>
+              </div>
+
+            </div>
           </div>
         </div>
 
