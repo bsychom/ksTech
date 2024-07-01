@@ -1,29 +1,23 @@
+'use client'
+
 import Link from "next/link";
 import "../globals.css";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 export default function Header() {
+
+  const [displayMenu, setDisplayMenu] = useState<boolean>(false);
+
+  useEffect(() =>{
+    document.body.style.overflow = 'hidden';
+  }, [displayMenu])
+
   return (
-    <div className="w-full relative">
+    <>
+    <div className="w-full relative hidden md:block">
       <div className="absolute  md:w-[25%] lg:w-[30%] 2xl:w-[38%] h-[130px] 2xl:h-[150px]   custum-clip bg-[#20207B]"></div>
       <div className="w-full   relative  h-[130px] 2xl:h-[150px] flex items-center pb-6  container  ">
-        {/* <div className="bg-black absolute -bottom-7 2xl:-bottom-8 text-white container   flex">
-          <div className="w-[40%] flex justify-between pl-4 py-4 2xl:py-6 2xl:pl-6 font-semibold capitalize">
-            <div>
-              <p>Accueil</p>
-            </div>
-            <div>
-              <p>à propos</p>
-            </div>
-            <div>
-              <p>Nos Services</p>
-            </div>
-          </div>
-          <div className="w-[60%] flex justify-end ">
-            <button className="bg-[#20207B] p-4 ">
-              <p className="font-black tracking-wide">Contact </p>
-            </button>
-          </div>
-        </div> */}
+        
         <div className="w-[20%] 2xl:w-[23%] flex justify-center items-center">
           <Image
             className="w-[70%] lg:w-[80%]"
@@ -111,5 +105,79 @@ export default function Header() {
         </div>
       </div>
     </div>
+    <div className="w-full relative">
+    <div className=" md:hidden   bg-black text-white flex items-center justify-between py-2 fixed w-full z-50">
+      <div>
+        <Link href="/">
+          <Image className="w-52" src='/images/icons/logo.svg' width={10} height={10} alt="logo"/>
+        </Link>
+      </div>
+      <div className="pr-3  ">
+        <button className={`bg-blue-950 ${displayMenu ? 'p-1' : 'p-1.5'} rounded-sm`} onClick={() => setDisplayMenu(!displayMenu)}>
+        {
+          displayMenu ? <Image src='/images/icons/x.svg' alt="icon" width={10} height={10} className="w-6"/> : <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+      </svg>
+        }
+
+        </button>
+      </div>
+
+    </div>
+    <div className={`absolute w-full ${displayMenu ? 'h-screen' : 'h-[0px] ' }  bg-[#1E1E1E] transition-all duration-700 ease-in z-40 grid grid-rows-4 `}>
+      <div className="grid row-span-1"></div>
+      <div className={`grid row-span-1 ${displayMenu ? '' : '-mt-12'} transition-all duration-700 ease-in`}>
+        <div className={`flex flex-col w-[85%] mx-auto capitalize ${displayMenu ? 'gap-5' : 'gap-0'} transition-all duration-700 ease-in`}>
+        <Link className="text-[#0895FB]" href='/'>Accueil</Link>
+        <Link className="text-white" href='/'>à propos</Link>
+        <Link className="text-white" href='/'>Nos Services</Link>
+        </div>
+      </div>
+      <div className={`grid row-span-2 ${displayMenu ? '' : '-mt-14'} transition-all duration-700 ease-in`}>
+        <div className={ `flex flex-col w-full mx-auto ${displayMenu? 'gap-5' : 'gap-0'} transition-all duration-700 ease-in`}>
+        <div className="flex gap-2 w-[80%] mx-auto  ">
+          <Image className={`${displayMenu ? 'w-9' : 'w-5'  } transition-all duration-700 ease-in`} src='/images/icons/homemb.svg' alt="icon" width={10} height={10}/>
+          <div >
+            <h4 className="text-white font-['Poppins'] tracking-wider">Address</h4>
+            <p className="text-[#808080] text-sm font-['Poppins']">7190 Rue Jarry H1J 1G5 Anjou Québec</p>
+          </div>
+        </div>
+        <div className="flex gap-2 w-[80%] mx-auto ">
+          <Image className={`${displayMenu ? 'w-9' : 'w-5'  } transition-all duration-700 ease-in`} src='/images/icons/telemb.svg' alt="icon" width={10} height={10}/>
+          <div >
+            <h4 className="text-white font-['Poppins'] tracking-wider">Numéro de téléphone</h4>
+            <p className="text-[#808080] text-sm font-['Poppins']">+1 (438) 464-2161</p>
+          </div>
+        </div>
+        <div className="flex gap-2 w-[80%] mx-auto  ">
+          <Image className={`${displayMenu ? 'w-9' : 'w-5'  } transition-all duration-700 ease-in`} src='/images/icons/emailmb.svg' alt="icon" width={10} height={10}/>
+          <div >
+            <h4 className="text-white font-['Poppins'] tracking-wider">Email</h4>
+            <p className="text-[#808080] text-sm font-['Poppins']">info@kstechnologie.com</p>
+          </div>
+        </div>
+          <div className={`w-[80%] mx-auto pt-8 ${displayMenu ? '' : '-mt-28'} transition-all duration-700 ease-in`}>
+            <button className="w-full text-white bg-[#20207B] py-5 rounded-md font-['Poppins'] font-bold tracking-wider">
+            Contact 
+            </button>
+
+          </div>
+       
+        
+
+        </div>
+      </div>
+
+      
+
+    </div>
+    </div>
+
+
+
+
+
+    </>
+   
   );
 }
