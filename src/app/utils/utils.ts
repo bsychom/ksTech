@@ -1,3 +1,4 @@
+
 const getBackground = (index: number) => {
     switch (index) {
       case 0:
@@ -12,4 +13,10 @@ const getBackground = (index: number) => {
   };
 
 
-  export {getBackground};
+  const keys = () =>{
+    const key = process.env.PUBLIC_KEY
+    return key;
+  }
+
+
+  export {getBackground, keys};

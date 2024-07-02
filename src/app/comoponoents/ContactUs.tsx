@@ -3,6 +3,7 @@ import GoogleMap from "./GoogleMaps";
 import React, { FormEvent, useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
+import { keys } from "../utils/utils";
 
 export default function ContactUs() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -12,6 +13,12 @@ export default function ContactUs() {
   const emailRef = useRef<HTMLInputElement>(null);
   const nameRef = useRef<HTMLInputElement >(null);
   const messageRef = useRef<HTMLTextAreaElement>(null)
+  useEffect(() =>{
+    console.log(process.env.PUBLIC_KEY, 'PUBLIC')
+    console.log(keys(), 'keys')
+    console.log(process.env.TEMPLATE_ID, 'templateid')
+
+  })
   
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     setIsLoading(true);
