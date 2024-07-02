@@ -13,12 +13,7 @@ export default function ContactUs() {
   const emailRef = useRef<HTMLInputElement>(null);
   const nameRef = useRef<HTMLInputElement >(null);
   const messageRef = useRef<HTMLTextAreaElement>(null)
-  useEffect(() =>{
-    console.log(process.env.PUBLIC_KEY, 'PUBLIC')
-    console.log(keys(), 'keys')
-    console.log(process.env.TEMPLATE_ID, 'templateid')
-
-  })
+ 
   
   const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     setIsLoading(true);
