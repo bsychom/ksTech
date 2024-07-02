@@ -33,7 +33,8 @@ export default function ContactUs() {
       }).then((res) =>
       {
         if(res.text == 'OK'){
-          setMessage('your message send seccessfuly ');
+          // setMessage('your message send seccessfuly ');
+          setMessage('votre message a été envoyé avec succès');
           setColor('bg-green-500')
           if(nameRef.current && emailRef.current && messageRef.current){
             nameRef.current.value = ''
@@ -42,7 +43,9 @@ export default function ContactUs() {
 
           }
         }else{
-          setMessage('something happen catn you try to send or you can use this email directly :  info@kstechnologie.com')
+          // setMessage('something happen catn you try to send or you can use this email directly :  info@kstechnologie.com')
+          setMessage("quelque chose s'est produit lorsque vous essayez d'envoyer ou vous pouvez utiliser cet email directement : info@kstechnologie.com");
+          
           setColor('bg-red-500');
         }
         setDisplayToast(true);
