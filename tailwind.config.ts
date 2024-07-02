@@ -17,18 +17,6 @@ const config: Config = {
     },
     container: {
       center: true,
-      padding: {
-        xl: "50px",
-        '2xl':"90px",
-      },
-      screens: {
-        sm: '600px',
-        md: '728px',
-        lg: '1150px',
-        xl: '1455px',
-        '2xl': '1696px',
-        '3xl': '1921px',
-      },
     },
   },
   plugins: [],

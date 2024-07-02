@@ -110,8 +110,8 @@ export default function Header() {
             </div>
           </div>
         </div>
-        <div className=" container  relative">
-          <div className="absolute bg-black w-full -top-[30px]  text-white flex items-center">
+        <div className=" container  relative w-fit">
+          <div className="absolute bg-black container  w-full -top-[30px]  text-white flex items-center">
             <div className="w-[60%] flex justify-around font-semibold capitalize">
               <Link
                 onClick={() => {
@@ -147,6 +147,43 @@ export default function Header() {
             </div>
           </div>
         </div>
+      </div>
+      <div className="w-screen container relative">
+      <div className="absolute bg-black container  w-full -top-[30px]  text-white flex items-center">
+            <div className="w-[60%] flex justify-around font-semibold capitalize">
+              <Link
+                onClick={() => {
+                  handleColor("accueil");
+                }}
+                href="#home"
+                className={`${accueil}`}
+              >
+                Accueil
+              </Link>
+              <Link
+                onClick={() => handleColor("propos")}
+                href="#about"
+                className={`${propos}`}
+              >
+                à propos
+              </Link>
+              <Link
+                onClick={() => handleColor("service")}
+                href="#services"
+                className={`${service}`}
+              >
+                Services
+              </Link>
+            </div>
+            <div className="w-[40%] flex justify-end relative">
+              <Link
+                href="#contact"
+                className="p-4 font-black tracking-wide bg-[#20207B]"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
       </div>
       <div className="w-full relative md:hidden">
         <div className="    bg-black text-white flex items-center justify-between min-h-[70px] max-h-[70px] h-[70px] fixed w-full z-50">

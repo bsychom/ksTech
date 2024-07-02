@@ -1,3 +1,5 @@
+'use client'
+
 import { Inter } from "next/font/google";
 import Image from "next/image";
 import Header from "./comoponoents/header";
@@ -8,9 +10,14 @@ import Services from "./comoponoents/Services";
 import ChoseUs from "./comoponoents/ChoseUs";
 import ContactUs from "./comoponoents/ContactUs";
 import Footer from "./comoponoents/Footer";
+import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+  useEffect(() =>{
+    console.log('some thing is change')
+  })
   return (
     <div className="w-screen h-screen bg-white relative overflow-x-hidden">
       <div className="absolute w-full">

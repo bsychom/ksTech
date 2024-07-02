@@ -97,7 +97,7 @@ export default function Footer() {
                 />
               </div>
               <div>
-                <button className="bg-[#20207B] m-1 py-2 px-3 rounded-md">S&apos;abonner</button>
+                <button className="bg-[#20207B]  m-1 py-2 px-3 rounded-md">S&apos;abonner</button>
               </div>
             </div>
             <div></div>
